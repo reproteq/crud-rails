@@ -1,0 +1,58 @@
+<h1>Lista de contactos</h1>
+<p><%= link_to("Añadir contacto", {:controller => 'contact', :action => 'new'}, data: { turbolinks: false } , :class => "btn btn-success" ) %></p>
+
+<table class="table table-striped" summary="Contact List">
+  <tr class="header">
+    <th>
+      Nombre
+    </th>      
+    <th>
+      Apellidos
+    </th>
+    <th>
+      Calle
+    </th>
+    <th>
+      Poblacion
+    </th>    
+    <th>
+      Provincia
+    </th>
+    <th>
+      Pais
+    </th>
+    
+    <th>
+      Acciones
+    </th>
+  </tr>
+  <% @contact.each do |t| %>
+  <tr>
+
+    <td>
+      <%= t.nombre %>
+      </td>
+    <td>
+      <%= t.apellidos %>
+    </td>    
+     <td>
+      <%= t.calle %>
+    </td>     
+    <td>
+      <%= t.poblacion %>
+    </td>      
+     <td>
+      <%= t.provincia %>
+    </td>
+     <td>
+      <%= t.pais %>
+    </td>
+
+    <td>
+      <%= link_to("Detalles", {:action => 'show', :id => t.id}, data: { turbolinks: false }, :class => "btn btn-primary") %>
+      <%= link_to("Editar", {:action => 'edit', :id => t.id}, data: { turbolinks: false }, :class => "btn btn-primary") %>
+      <%= link_to("Borrar", {:action => 'delete', :id => t.id}, data: { turbolinks: false }, :class => "btn btn-primary") %>
+    </td>
+  </tr>
+  <% end %>
+</table>
