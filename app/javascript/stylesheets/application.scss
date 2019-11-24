@@ -17,6 +17,7 @@ import "../stylesheets/aplication"
 import  './src/application.scss'
 
 
+
 require("bootstrap/dist/js/bootstrap")
 document.addEventListener.("turbolinks:load", () =>{
     $('[data-toggle="tooltip"]').tooltip()

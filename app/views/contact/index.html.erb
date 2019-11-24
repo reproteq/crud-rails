@@ -1,7 +1,8 @@
 <h1>Lista de contactos</h1>
 <p><%= link_to("Añadir contacto", {:controller => 'contact', :action => 'new'}, data: { turbolinks: false } , :class => "btn btn-success" ) %></p>
 
-<table class="table table-striped" border="1" summary="Contact List">
+<table class="table table-dark" border="1" summary="Contact List">
+ <thead class="thead-dark">
   <tr class="header">
     <th>
       Nombre
@@ -26,45 +27,23 @@
       Acciones
     </th>
   </tr>
+ </thead>
   <% @contact.each do |t| %>
+ <thead class="thead-light">
   <tr>
-
-    <td>
-      <%= t.nombre %>
-      </td>
-    <td>
-      <%= t.apellidos %>
-    </td>    
-     <td>
-      <%= t.calle %>
-    </td>     
-    <td>
-      <%= t.poblacion %>
-    </td>      
-     <td>
-      <%= t.provincia %>
-    </td>
-     <td>
-      <%= t.pais %>
-    </td>
-
-    <td>
+  <th scope="col"><%= t.nombre %></th>
+  <th scope="col"><%= t.apellidos %></th>
+  <th scope="col"><%= t.calle %></th>
+  <th scope="col"><%= t.poblacion %></th>
+  <th scope="col"><%= t.provincia %></th>
+  <th scope="col"><%= t.pais %></th> 
+  <th scope="col">     
       <%= link_to("Detalles", {:action => 'show', :id => t.id}, data: { turbolinks: false }, :class => "btn btn-primary") %>
       <%= link_to("Editar", {:action => 'edit', :id => t.id}, data: { turbolinks: false }, :class => "btn btn-primary") %>
      
       <%= link_to("Borrar", {:action => 'delete', :id => t.id}, data: { turbolinks: false }, :class => "btn btn-danger",  confirmation: 'Are you sure?') %>
-    <%-#  link_to("Borrar", {:action => 'delete', :id => t.id}, data: { confirm: "Eliminar Item?" }, :class => "btn btn-primary")  -%>
- 
-<button class="btn btn-large btn-primary" data-toggle="confirmation"
-        data-btn-ok-label="Continue" data-btn-ok-class="btn-success"
-        data-btn-ok-icon-class="material-icons" data-btn-ok-icon-content="check"
-        data-btn-cancel-label="Stoooop!" data-btn-cancel-class="btn-danger"
-        data-btn-cancel-icon-class="material-icons" data-btn-cancel-icon-content="close"
-        data-title="Is it ok?" data-content="This might be dangerous">
-  Confirmation
-</button>
-
-    </td>
+  </th>
   </tr>
+  </thead>
   <% end %>
 </table>
