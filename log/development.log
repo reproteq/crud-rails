@@ -17924,3 +17924,3261 @@ Processing by ContactController#index as HTML
 Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 10398)
 
 
+Started GET "/" for 127.0.0.1 at 2019-11-24 18:59:46 +0100
+  
+ActionController::RoutingError (uninitialized constant MyappController):
+  
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 18:59:52 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 10301)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:00:22 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1559)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 8917)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:00:38 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 8912)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:00:44 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 9004)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:00:47 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.7ms | Allocations: 9009)
+
+
+Started GET "/contact/show/56" for 127.0.0.1 at 2019-11-24 19:01:02 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 56 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 8469)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:01:05 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 9004)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:01:20 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 9005)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:04:30 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 8999)
+
+
+Started GET "/contact/edit/56" for 127.0.0.1 at 2019-11-24 19:16:07 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 56 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 838)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 8994)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:16:39 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 8914)
+
+
+Started GET "/contact/new" for 127.0.0.1 at 2019-11-24 19:17:10 +0100
+Processing by ContactController#new as HTML
+  Rendering contact/new.html.erb within layouts/application
+  Rendered contact/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 799)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 8401)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:21:16 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 9012)
+
+
+Started GET "/contact/new" for 127.0.0.1 at 2019-11-24 19:21:22 +0100
+Processing by ContactController#new as HTML
+  Rendering contact/new.html.erb within layouts/application
+  Rendered contact/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 527)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 7994)
+
+
+Started POST "/contact/create" for 127.0.0.1 at 2019-11-24 19:21:38 +0100
+Processing by ContactController#create as HTML
+  Parameters: {"authenticity_token"=>"mBJ8W9p7dLwKG3FtJZywT42VxmO0yhE8YjF7HVN0IOPRqRitcdWStd1D6tCsNGeI1XG+EtG0bJ6ieTeZWKmCHg==", "contact"=>{"nombre"=>"Mmm", "apellidos"=>"tomas", "calle"=>"avenica iecla 1 esc2 4ºb pta18", "poblacion"=>"benicarló", "provincia"=>"Valenciana, Comunidad", "pais"=>"España"}, "commit"=>"Añadir"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO `contacts` (`nombre`, `apellidos`, `calle`, `poblacion`, `provincia`, `pais`, `created_at`, `updated_at`) VALUES ('Mmm', 'tomas', 'avenica iecla 1 esc2 4ºb pta18', 'benicarló', 'Valenciana, Comunidad', 'España', '2019-11-24 18:21:38.344393', '2019-11-24 18:21:38.344393')[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+Redirected to http://reproteq.duckdns.org/contact
+Completed 302 Found in 17ms (ActiveRecord: 14.2ms | Allocations: 2805)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:21:38 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1949)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 9405)
+
+
+Started GET "/contact/edit/57" for 127.0.0.1 at 2019-11-24 19:21:45 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"57"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 57 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 8599)
+
+
+Started POST "/contact/update/57" for 127.0.0.1 at 2019-11-24 19:21:46 +0100
+Processing by ContactController#update as HTML
+  Parameters: {"authenticity_token"=>"VOThflQl/DQp+mit4kV/w2cjGZxXlkgJnQTLgzZTU15rAId6QoJI6RxjLAndocALmzC2R+i3/aVbyzEo/fIXVw==", "contact"=>{"nombre"=>"Mmm", "apellidos"=>"tomas", "calle"=>"avenica iecla 1 esc2 4ºb pta18", "poblacion"=>"benicarló", "provincia"=>"Valenciana, Comunidad", "pais"=>"España"}, "commit"=>"Editar", "id"=>"57"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 57 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:25:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /home/deploy/crud-rails/app/controllers/contact_controller.rb:26)
+Redirected to http://reproteq.duckdns.org/contact
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1480)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:21:46 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1950)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 9405)
+
+
+Started POST "/contact/create" for 127.0.0.1 at 2019-11-24 19:22:18 +0100
+Processing by ContactController#create as HTML
+  Parameters: {"authenticity_token"=>"Racbww9CVQGl45pDE7iUlTC1NcWLfmXM1c4J2nXWzJgLtxiq+kY1mgFrKYXpbRQDdQ35Zm9ZTy5qnM9JBon2aQ==", "contact"=>{"nombre"=>"Amit", "apellidos"=>".", "calle"=>"", "poblacion"=>"", "provincia"=>"", "pais"=>""}, "commit"=>"Añadir"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO `contacts` (`nombre`, `apellidos`, `calle`, `poblacion`, `provincia`, `pais`, `created_at`, `updated_at`) VALUES ('Amit', '.', '', '', '', '', '2019-11-24 18:22:18.514482', '2019-11-24 18:22:18.514482')[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+Redirected to http://reproteq.duckdns.org/contact
+Completed 302 Found in 16ms (ActiveRecord: 11.6ms | Allocations: 2805)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:22:18 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 9790)
+
+
+Started GET "/contact/edit/58" for 127.0.0.1 at 2019-11-24 19:22:27 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 58 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 8578)
+
+
+Started POST "/contact/update/58" for 127.0.0.1 at 2019-11-24 19:22:39 +0100
+Processing by ContactController#update as HTML
+  Parameters: {"authenticity_token"=>"E260LHYly980E2H/dtiP3HDgKUxAaAnr93NBKrqJQFJFVkpticcxgjeg7aPA1RZ/xpXewfaFr/dmelElNELLzQ==", "contact"=>{"nombre"=>"Amit", "apellidos"=>".", "calle"=>"Albercas", "poblacion"=>"Fornite ", "provincia"=>"", "pais"=>""}, "commit"=>"Editar", "id"=>"58"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 58 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:25:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /home/deploy/crud-rails/app/controllers/contact_controller.rb:26)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_controller.rb:26:in `update'
+  [1m[36mContact Update (0.2ms)[0m  [1m[33mUPDATE `contacts` SET `contacts`.`calle` = 'Albercas', `contacts`.`poblacion` = 'Fornite ', `contacts`.`updated_at` = '2019-11-24 18:22:39.416444' WHERE `contacts`.`id` = 58[0m
+  ↳ app/controllers/contact_controller.rb:26:in `update'
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contact_controller.rb:26:in `update'
+Redirected to http://reproteq.duckdns.org/contact
+Completed 302 Found in 16ms (ActiveRecord: 11.6ms | Allocations: 3625)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 19:22:39 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 9797)
+
+
+Started GET "/echo.php" for 127.0.0.1 at 2019-11-24 20:05:00 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/echo.php"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-11-24 20:10:42 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (uninitialized constant MyappController):
+  
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-11-24 21:07:33 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (uninitialized constant MyappController):
+  
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:11:06 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 9798)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:18:13 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2343)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 9837)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:19:57 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2693)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 11194)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:19:58 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 9840)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:19:59 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 9846)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:19:59 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 9825)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:20:50 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2698)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 11183)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:21:02 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2692)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 11186)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:21:18 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2693)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 11187)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:10 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2693)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 11187)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:11 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 9834)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:11 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 9829)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:19 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2697)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 11194)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:19 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 9836)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:43 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2693)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 11189)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:44 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 9826)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:45 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 9828)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:45 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 9820)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:47 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.6ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.6ms | Allocations: 9846)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:22:48 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.7ms | Allocations: 9831)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:23:18 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2698)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 11193)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:23:18 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 9830)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:23:19 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 9824)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:23:19 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 9826)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:23:19 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.7ms | Allocations: 9828)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:23:19 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.6ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.6ms | Allocations: 9821)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:23:29 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2698)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 11195)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:24:35 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2693)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 11197)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:27:58 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 11235)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:28:17 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 11239)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:28:18 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 9833)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:29:11 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 11240)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:30:04 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 11221)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:42:15 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2350)
+[Webpacker] Compiling...
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:42:16 +0100
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2343)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: f8d1d5fe440f93151e92
+Version: webpack 4.41.2
+Time: 506ms
+Built at: 11/24/2019 9:42:16 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2b12200ea2b1ddbd2450.js    644 KiB  application  [emitted] [immutable]  application
+js/application-2b12200ea2b1ddbd2450.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2b12200ea2b1ddbd2450.js js/application-2b12200ea2b1ddbd2450.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 834 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 1142ms (Views: 1140.5ms | ActiveRecord: 0.2ms | Allocations: 22466)
+
+
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: f8d1d5fe440f93151e92
+Version: webpack 4.41.2
+Time: 517ms
+Built at: 11/24/2019 9:42:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2b12200ea2b1ddbd2450.js    644 KiB  application  [emitted] [immutable]  application
+js/application-2b12200ea2b1ddbd2450.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2b12200ea2b1ddbd2450.js js/application-2b12200ea2b1ddbd2450.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 834 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 1171ms (Views: 1170.2ms | ActiveRecord: 0.2ms | Allocations: 12713)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:44:08 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2344)
+[Webpacker] Compiling...
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:44:09 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2344)
+[Webpacker] Compiling...
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:44:09 +0100
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: f8d1d5fe440f93151e92
+Version: webpack 4.41.2
+Time: 497ms
+Built at: 11/24/2019 9:44:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2b12200ea2b1ddbd2450.js    644 KiB  application  [emitted] [immutable]  application
+js/application-2b12200ea2b1ddbd2450.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2b12200ea2b1ddbd2450.js js/application-2b12200ea2b1ddbd2450.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 834 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 1136ms (Views: 1134.7ms | ActiveRecord: 0.2ms | Allocations: 33066)
+
+
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: f8d1d5fe440f93151e92
+Version: webpack 4.41.2
+Time: 522ms
+Built at: 11/24/2019 9:44:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2b12200ea2b1ddbd2450.js    644 KiB  application  [emitted] [immutable]  application
+js/application-2b12200ea2b1ddbd2450.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2b12200ea2b1ddbd2450.js js/application-2b12200ea2b1ddbd2450.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 834 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 1211ms (Views: 1210.5ms | ActiveRecord: 0.2ms | Allocations: 24247)
+
+
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: f8d1d5fe440f93151e92
+Version: webpack 4.41.2
+Time: 525ms
+Built at: 11/24/2019 9:44:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2b12200ea2b1ddbd2450.js    644 KiB  application  [emitted] [immutable]  application
+js/application-2b12200ea2b1ddbd2450.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2b12200ea2b1ddbd2450.js js/application-2b12200ea2b1ddbd2450.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 834 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 1212ms (Views: 1211.4ms | ActiveRecord: 0.2ms | Allocations: 14499)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:44:58 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 2c45545332374729d862
+Version: webpack 4.41.2
+Time: 1525ms
+Built at: 11/24/2019 9:45:00 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-01c628b00b084e18b591.js   1.27 MiB  application  [emitted] [immutable]  application
+js/application-01c628b00b084e18b591.js.map   1.41 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-01c628b00b084e18b591.js js/application-01c628b00b084e18b591.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 873 bytes {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+Completed 200 OK in 2173ms (Views: 2171.8ms | ActiveRecord: 0.2ms | Allocations: 11004)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:55 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 8633)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:56 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2344)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 8649)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:56 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 8641)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:57 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2344)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 8635)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:57 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2345)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 8644)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:57 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 8643)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:57 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2344)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.7ms | Allocations: 8635)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:46:59 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 8647)
+
+
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.1. (called from block in <main> at /home/deploy/crud-rails/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.1. (called from block in <main> at /home/deploy/crud-rails/config/routes.rb:3)
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:47:12 +0100
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 9238)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 0.7ms | Allocations: 28697)
+
+
+Started GET "/contact/new" for 127.0.0.1 at 2019-11-24 21:47:14 +0100
+Processing by ContactController#new as HTML
+  Rendering contact/new.html.erb within layouts/application
+  Rendered contact/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 968)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 7425)
+
+
+Started POST "/contact/create" for 127.0.0.1 at 2019-11-24 21:47:19 +0100
+Processing by ContactController#create as HTML
+  Parameters: {"authenticity_token"=>"6Sny4mEnz8ID9qyQrgBWYSBgOtmtEAzcTubg4Ap4YK1HIj8R9E2GNGyBhUuCfLULZA7YAlE1wEp/Zbu92cnpdw==", "contact"=>{"nombre"=>"alejandro gregori tomas", "apellidos"=>"tomas", "calle"=>"avenica iecla 1 esc2 4ºb pta18", "poblacion"=>"benicarló", "provincia"=>"Valenciana, Comunidad", "pais"=>"España"}, "commit"=>"Añadir"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO `contacts` (`nombre`, `apellidos`, `calle`, `poblacion`, `provincia`, `pais`, `created_at`, `updated_at`) VALUES ('alejandro gregori tomas', 'tomas', 'avenica iecla 1 esc2 4ºb pta18', 'benicarló', 'Valenciana, Comunidad', 'España', '2019-11-24 20:47:19.551602', '2019-11-24 20:47:19.551602')[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contact_controller.rb:8:in `create'
+Redirected to http://192.168.1.18/contact
+Completed 302 Found in 15ms (ActiveRecord: 11.9ms | Allocations: 3162)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:47:19 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2750)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 9058)
+
+
+Started GET "/contact/delete/59" for 127.0.0.1 at 2019-11-24 21:47:23 +0100
+Processing by ContactController#delete as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 59 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:33:in `delete'
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_controller.rb:35:in `delete'
+  [1m[36mContact Destroy (0.1ms)[0m  [1m[31mDELETE FROM `contacts` WHERE `contacts`.`id` = 59[0m
+  ↳ app/controllers/contact_controller.rb:35:in `delete'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contact_controller.rb:35:in `delete'
+Redirected to http://192.168.1.18/contact
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms | Allocations: 3235)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:47:23 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2353)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 8661)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:47:26 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 8631)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:48:06 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 9856)
+
+
+Started GET "/packs/js/application-a1b3b2e217d0fdc693fe.js" for 127.0.0.1 at 2019-11-24 21:48:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-a1b3b2e217d0fdc693fe.js"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:48:07 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 9918)
+
+
+Started GET "/packs/js/application-a1b3b2e217d0fdc693fe.js" for 127.0.0.1 at 2019-11-24 21:48:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-a1b3b2e217d0fdc693fe.js"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:48:07 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2343)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.4ms | Allocations: 9842)
+
+
+Started GET "/packs/js/application-a1b3b2e217d0fdc693fe.js" for 127.0.0.1 at 2019-11-24 21:48:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-a1b3b2e217d0fdc693fe.js"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:48:07 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 9844)
+
+
+Started GET "/packs/js/application-a1b3b2e217d0fdc693fe.js" for 127.0.0.1 at 2019-11-24 21:48:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-a1b3b2e217d0fdc693fe.js"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:59:31 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2343)
+[Webpacker] Compiling...
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:59:32 +0100
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 5c2f71a1af21bc01c85f
+Version: webpack 4.41.2
+Time: 2447ms
+Built at: 11/24/2019 9:59:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-72d7fdd580e0b3e004f9.js   1.67 MiB  application  [emitted] [immutable]  application
+js/application-72d7fdd580e0b3e004f9.js.map   1.78 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-72d7fdd580e0b3e004f9.js js/application-72d7fdd580e0b3e004f9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 873 bytes {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 115 hidden modules
+
+Completed 200 OK in 3101ms (Views: 3099.2ms | ActiveRecord: 0.2ms | Allocations: 22518)
+
+
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 5c2f71a1af21bc01c85f
+Version: webpack 4.41.2
+Time: 1687ms
+Built at: 11/24/2019 9:59:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-72d7fdd580e0b3e004f9.js   1.67 MiB  application  [emitted] [immutable]  application
+js/application-72d7fdd580e0b3e004f9.js.map   1.78 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-72d7fdd580e0b3e004f9.js js/application-72d7fdd580e0b3e004f9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 873 bytes {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 115 hidden modules
+
+Completed 200 OK in 2386ms (Views: 2385.2ms | ActiveRecord: 0.2ms | Allocations: 12747)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 21:59:45 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 9838)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:03:17 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Compiling...
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:03:18 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 2c45545332374729d862
+Version: webpack 4.41.2
+Time: 1384ms
+Built at: 11/24/2019 10:03:19 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-01c628b00b084e18b591.js   1.27 MiB  application  [emitted] [immutable]  application
+js/application-01c628b00b084e18b591.js.map   1.41 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-01c628b00b084e18b591.js js/application-01c628b00b084e18b591.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 873 bytes {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+Completed 200 OK in 2038ms (Views: 2037.0ms | ActiveRecord: 0.2ms | Allocations: 21811)
+
+
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 2c45545332374729d862
+Version: webpack 4.41.2
+Time: 1342ms
+Built at: 11/24/2019 10:03:20 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-01c628b00b084e18b591.js   1.27 MiB  application  [emitted] [immutable]  application
+js/application-01c628b00b084e18b591.js.map   1.41 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-01c628b00b084e18b591.js js/application-01c628b00b084e18b591.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 873 bytes {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+Completed 200 OK in 2044ms (Views: 2042.7ms | ActiveRecord: 0.4ms | Allocations: 12744)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:03:20 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.5ms | Allocations: 9836)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:03:21 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 9836)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:04:33 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2743)
+[Webpacker] Compiling...
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:04:35 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2351)
+[Webpacker] Compiling...
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:04:35 +0100
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 5bfebed43df3635a5a4a
+Version: webpack 4.41.2
+Time: 1389ms
+Built at: 11/24/2019 10:04:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fa208fb6ee4de275c2fc.js   1.27 MiB  application  [emitted] [immutable]  application
+js/application-fa208fb6ee4de275c2fc.js.map   1.41 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fa208fb6ee4de275c2fc.js js/application-fa208fb6ee4de275c2fc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.02 KiB {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+Completed 200 OK in 2035ms (Views: 2032.9ms | ActiveRecord: 0.2ms | Allocations: 34511)
+
+
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 5bfebed43df3635a5a4a
+Version: webpack 4.41.2
+Time: 1431ms
+Built at: 11/24/2019 10:04:37 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fa208fb6ee4de275c2fc.js   1.27 MiB  application  [emitted] [immutable]  application
+js/application-fa208fb6ee4de275c2fc.js.map   1.41 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fa208fb6ee4de275c2fc.js js/application-fa208fb6ee4de275c2fc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.02 KiB {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+Completed 200 OK in 2123ms (Views: 2122.3ms | ActiveRecord: 0.3ms | Allocations: 24265)
+
+
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 5bfebed43df3635a5a4a
+Version: webpack 4.41.2
+Time: 1405ms
+Built at: 11/24/2019 10:04:37 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fa208fb6ee4de275c2fc.js   1.27 MiB  application  [emitted] [immutable]  application
+js/application-fa208fb6ee4de275c2fc.js.map   1.41 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fa208fb6ee4de275c2fc.js js/application-fa208fb6ee4de275c2fc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.02 KiB {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+Completed 200 OK in 2114ms (Views: 2113.7ms | ActiveRecord: 0.2ms | Allocations: 14505)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:04:46 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 9844)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:06:01 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 5c879199b7149b024fd1
+Version: webpack 4.41.2
+Time: 1384ms
+Built at: 11/24/2019 10:06:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9baaf43b3b9d35d33ed2.js   1.27 MiB  application  [emitted] [immutable]  application
+js/application-9baaf43b3b9d35d33ed2.js.map   1.41 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9baaf43b3b9d35d33ed2.js js/application-9baaf43b3b9d35d33ed2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 923 bytes {application} [built]
+[./app/javascript/src/style.scss] 542 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/style.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/style.scss 648 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+Completed 200 OK in 2036ms (Views: 2034.8ms | ActiveRecord: 0.2ms | Allocations: 10996)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:06:05 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 9844)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:06:05 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 9834)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:06:48 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: ac577f9d28985cd590a9
+Version: webpack 4.41.2
+Time: 544ms
+Built at: 11/24/2019 10:06:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-87d9ad6319554d2d1de9.js    644 KiB  application  [emitted] [immutable]  application
+js/application-87d9ad6319554d2d1de9.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-87d9ad6319554d2d1de9.js js/application-87d9ad6319554d2d1de9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 850 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 1187ms (Views: 1185.5ms | ActiveRecord: 0.2ms | Allocations: 10990)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:06:50 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 9834)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:07:24 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+/home/deploy/crud-rails/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+ReferenceError: window is not defined
+    at Object.<anonymous> (/home/deploy/crud-rails/config/webpack/environment.js:13:1)
+    at Module._compile (/home/deploy/crud-rails/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/deploy/crud-rails/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/home/deploy/crud-rails/config/webpack/development.js:3:21)
+    at Module._compile (/home/deploy/crud-rails/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/deploy/crud-rails/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at WEBPACK_OPTIONS (/home/deploy/crud-rails/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/deploy/crud-rails/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/deploy/crud-rails/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/deploy/crud-rails/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/deploy/crud-rails/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/deploy/crud-rails/node_modules/webpack-cli/node_modules/yargs/yargs.js:567:18)
+    at /home/deploy/crud-rails/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/deploy/crud-rails/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+
+Completed 200 OK in 591ms (Views: 589.6ms | ActiveRecord: 0.2ms | Allocations: 10909)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:07:27 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 9836)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:07:30 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 9839)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:07:31 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.6ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.6ms | Allocations: 9840)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:07:31 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 9834)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:08:05 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2743)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 5123)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp CRUD RUBY ON RAILS MYSQL BOOTSTRAP</title>
+    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contacts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contact/new">New</a>
+          <a class="dropdown-item" href="/edit/">Edit</a>
+          <a class="dropdown-item" href="/show/">Show</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+    
+    
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+    
+    
+  <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+  
+    <button class="btn btn-primary" data-toggle="confirmation" data-confirmation-event="myevent">Confirmation</button>
+<%= 
+window.onload = function() {
+   if (window.jQuery) {  
+       // jQuery is loaded  
+       alert("Yeah!");
+   } else {
+    location.reload();
+   }
+}
+  %>
+  
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Myapp CRUD RUBY ON RAILS MYSQL BOOTSTRAP</title>
+5:        
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+11:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+12:      </head>
+13:    
+14:      <body>
+15:        
+16:        
+17:        
+18:        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+19:      <a class="navbar-brand" href="#">Navbar</a>
+20:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+21:        <span class="navbar-toggler-icon"></span>
+22:      </button>
+23:    
+24:      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+25:        <ul class="navbar-nav mr-auto">
+26:          <li class="nav-item active">
+27:            <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+28:          </li>
+29:          <li class="nav-item">
+30:            <a class="nav-link" href="#">Link</a>
+31:          </li>
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+34:              Contacts
+35:            </a>
+36:            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+37:              <a class="dropdown-item" href="contact/new">New</a>
+38:              <a class="dropdown-item" href="/edit/">Edit</a>
+39:              <a class="dropdown-item" href="/show/">Show</a>
+40:              <div class="dropdown-divider"></div>
+41:              <a class="dropdown-item" href="#">Something else here</a>
+42:            </div>
+43:          </li>
+44:          <li class="nav-item">
+45:            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+46:          </li>
+47:        </ul>
+48:        <form class="form-inline my-2 my-lg-0">
+49:          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+50:          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+51:        </form>
+52:      </div>
+53:    </nav>
+54:        
+55:        
+56:        
+57:        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+58:      Tooltip on top
+59:    </button>
+60:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+61:      Tooltip on right
+62:    </button>
+63:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+64:      Tooltip on bottom
+65:    </button>
+66:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+67:      Tooltip on left
+68:    </button>
+69:        
+70:        
+71:      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+72:      
+73:        <button class="btn btn-primary" data-toggle="confirmation" data-confirmation-event="myevent">Confirmation</button>
+74:    <%= 
+75:    window.onload = function() {
+76:       if (window.jQuery) {  
+77:           // jQuery is loaded  
+78:           alert("Yeah!");
+79:       } else {
+80:        location.reload();
+81:       }
+82:    }
+83:      %>
+84:      
+85:      
+86:        <%= yield %>
+87:      </body>
+88:    </html>
+  
+app/views/layouts/application.html.erb:76: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:79: syntax error, unexpected '}', expecting ')'
+app/views/layouts/application.html.erb:80: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:91: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:76: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:79: syntax error, unexpected '}', expecting ')'
+app/views/layouts/application.html.erb:80: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:91: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:76: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:79: syntax error, unexpected '}', expecting ')'
+app/views/layouts/application.html.erb:80: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:91: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:76: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:79: syntax error, unexpected '}', expecting ')'
+app/views/layouts/application.html.erb:80: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:91: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:76: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:79: syntax error, unexpected '}', expecting ')'
+app/views/layouts/application.html.erb:80: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:91: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:76: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:79: syntax error, unexpected '}', expecting ')'
+app/views/layouts/application.html.erb:80: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:91: syntax error, unexpected end, expecting ')'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:09:05 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2738)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 5095)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp CRUD RUBY ON RAILS MYSQL BOOTSTRAP</title>
+    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contacts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contact/new">New</a>
+          <a class="dropdown-item" href="/edit/">Edit</a>
+          <a class="dropdown-item" href="/show/">Show</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+    
+    
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+    
+    
+  <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+  
+    <button class="btn btn-primary" data-toggle="confirmation" data-confirmation-event="myevent">Confirmation</button>
+<%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();}} %>
+  
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Myapp CRUD RUBY ON RAILS MYSQL BOOTSTRAP</title>
+5:        
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+11:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+12:      </head>
+13:    
+14:      <body>
+15:        
+16:        
+17:        
+18:        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+19:      <a class="navbar-brand" href="#">Navbar</a>
+20:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+21:        <span class="navbar-toggler-icon"></span>
+22:      </button>
+23:    
+24:      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+25:        <ul class="navbar-nav mr-auto">
+26:          <li class="nav-item active">
+27:            <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+28:          </li>
+29:          <li class="nav-item">
+30:            <a class="nav-link" href="#">Link</a>
+31:          </li>
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+34:              Contacts
+35:            </a>
+36:            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+37:              <a class="dropdown-item" href="contact/new">New</a>
+38:              <a class="dropdown-item" href="/edit/">Edit</a>
+39:              <a class="dropdown-item" href="/show/">Show</a>
+40:              <div class="dropdown-divider"></div>
+41:              <a class="dropdown-item" href="#">Something else here</a>
+42:            </div>
+43:          </li>
+44:          <li class="nav-item">
+45:            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+46:          </li>
+47:        </ul>
+48:        <form class="form-inline my-2 my-lg-0">
+49:          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+50:          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+51:        </form>
+52:      </div>
+53:    </nav>
+54:        
+55:        
+56:        
+57:        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+58:      Tooltip on top
+59:    </button>
+60:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+61:      Tooltip on right
+62:    </button>
+63:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+64:      Tooltip on bottom
+65:    </button>
+66:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+67:      Tooltip on left
+68:    </button>
+69:        
+70:        
+71:      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+72:      
+73:        <button class="btn btn-primary" data-toggle="confirmation" data-confirmation-event="myevent">Confirmation</button>
+74:    <%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();}} %>
+75:      
+76:      
+77:        <%= yield %>
+78:      </body>
+79:    </html>
+  
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:09:06 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2344)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 3944)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp CRUD RUBY ON RAILS MYSQL BOOTSTRAP</title>
+    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contacts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contact/new">New</a>
+          <a class="dropdown-item" href="/edit/">Edit</a>
+          <a class="dropdown-item" href="/show/">Show</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+    
+    
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+    
+    
+  <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+  
+    <button class="btn btn-primary" data-toggle="confirmation" data-confirmation-event="myevent">Confirmation</button>
+<%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();}} %>
+  
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Myapp CRUD RUBY ON RAILS MYSQL BOOTSTRAP</title>
+5:        
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+11:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+12:      </head>
+13:    
+14:      <body>
+15:        
+16:        
+17:        
+18:        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+19:      <a class="navbar-brand" href="#">Navbar</a>
+20:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+21:        <span class="navbar-toggler-icon"></span>
+22:      </button>
+23:    
+24:      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+25:        <ul class="navbar-nav mr-auto">
+26:          <li class="nav-item active">
+27:            <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+28:          </li>
+29:          <li class="nav-item">
+30:            <a class="nav-link" href="#">Link</a>
+31:          </li>
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+34:              Contacts
+35:            </a>
+36:            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+37:              <a class="dropdown-item" href="contact/new">New</a>
+38:              <a class="dropdown-item" href="/edit/">Edit</a>
+39:              <a class="dropdown-item" href="/show/">Show</a>
+40:              <div class="dropdown-divider"></div>
+41:              <a class="dropdown-item" href="#">Something else here</a>
+42:            </div>
+43:          </li>
+44:          <li class="nav-item">
+45:            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+46:          </li>
+47:        </ul>
+48:        <form class="form-inline my-2 my-lg-0">
+49:          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+50:          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+51:        </form>
+52:      </div>
+53:    </nav>
+54:        
+55:        
+56:        
+57:        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+58:      Tooltip on top
+59:    </button>
+60:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+61:      Tooltip on right
+62:    </button>
+63:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+64:      Tooltip on bottom
+65:    </button>
+66:    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+67:      Tooltip on left
+68:    </button>
+69:        
+70:        
+71:      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+72:      
+73:        <button class="btn btn-primary" data-toggle="confirmation" data-confirmation-event="myevent">Confirmation</button>
+74:    <%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();}} %>
+75:      
+76:      
+77:        <%= yield %>
+78:      </body>
+79:    </html>
+  
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:74: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:74: syntax error, unexpected ';', expecting =>
+app/views/layouts/application.html.erb:82: syntax error, unexpected end, expecting ')'
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:09:34 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2740)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: f8d1d5fe440f93151e92
+Version: webpack 4.41.2
+Time: 551ms
+Built at: 11/24/2019 10:09:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2b12200ea2b1ddbd2450.js    644 KiB  application  [emitted] [immutable]  application
+js/application-2b12200ea2b1ddbd2450.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2b12200ea2b1ddbd2450.js js/application-2b12200ea2b1ddbd2450.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 834 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 1205ms (Views: 1203.6ms | ActiveRecord: 0.2ms | Allocations: 12411)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:09:54 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2738)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 11248)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:00 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 849)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 9059)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:03 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 8633)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:04 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 8622)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:11 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.7ms | Allocations: 8620)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:11 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 8624)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:46 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 838)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 9908)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:46 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 582)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 8653)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:47 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 8632)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:49 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 8632)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:10:49 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 8626)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:13 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 843)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 9918)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:14 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 581)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 8642)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:15 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 8636)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:15 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.7ms | Allocations: 8632)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:23 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 844)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 9919)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:24 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 581)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 8646)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:25 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 8634)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:25 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 8640)
+
+
+Started GET "/contact/edit/53" for 127.0.0.1 at 2019-11-24 22:11:26 +0100
+Processing by ContactController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:21:in `edit'
+  Rendering contact/edit.html.erb within layouts/application
+  Rendered contact/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 8624)
+
+
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:11:41 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1192)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 2381)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    20:         <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+    21:       </div>   
+    22: </div>  
+    23: <%=  alert("Yeah!"); %>
+  
+app/views/contact/show.html.erb:23
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:11:50 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1091)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 2888)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">        
+        <h1>CONTACTO</h1>   
+       
+            <div>   
+              <label><h2>Nombre</h2></label>   
+              <h3> <%= @contact.nombre %> </h3>  
+            </div>   
+  
+            <div>   
+              <label><h2>Apellido</h2></label>   
+             <h3> <%= @contact.apellidos %>  </h3> 
+            </div>   
+            
+            <div>   
+              <label><h2>Calle</h2></label>   
+            <h3>  <%= @contact.calle %></h3>   
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+      </div>   
+</div>  
+<%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();}} %>
+
+):
+1:    <div class="container">        
+2:            <h1>CONTACTO</h1>   
+3:           
+4:                <div>   
+5:                  <label><h2>Nombre</h2></label>   
+6:                  <h3> <%= @contact.nombre %> </h3>  
+7:                </div>   
+8:      
+9:                <div>   
+10:                  <label><h2>Apellido</h2></label>   
+11:                 <h3> <%= @contact.apellidos %>  </h3> 
+12:                </div>   
+13:                
+14:                <div>   
+15:                  <label><h2>Calle</h2></label>   
+16:                <h3>  <%= @contact.calle %></h3>   
+17:                </div>   
+18:             
+19:          <div>   
+20:            <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+21:          </div>   
+22:    </div>  
+23:    <%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();}} %>
+  
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:12:19 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1091)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 2888)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">        
+        <h1>CONTACTO</h1>   
+       
+            <div>   
+              <label><h2>Nombre</h2></label>   
+              <h3> <%= @contact.nombre %> </h3>  
+            </div>   
+  
+            <div>   
+              <label><h2>Apellido</h2></label>   
+             <h3> <%= @contact.apellidos %>  </h3> 
+            </div>   
+            
+            <div>   
+              <label><h2>Calle</h2></label>   
+            <h3>  <%= @contact.calle %></h3>   
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+      </div>   
+</div>  
+<%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();} %>
+
+):
+1:    <div class="container">        
+2:            <h1>CONTACTO</h1>   
+3:           
+4:                <div>   
+5:                  <label><h2>Nombre</h2></label>   
+6:                  <h3> <%= @contact.nombre %> </h3>  
+7:                </div>   
+8:      
+9:                <div>   
+10:                  <label><h2>Apellido</h2></label>   
+11:                 <h3> <%= @contact.apellidos %>  </h3> 
+12:                </div>   
+13:                
+14:                <div>   
+15:                  <label><h2>Calle</h2></label>   
+16:                <h3>  <%= @contact.calle %></h3>   
+17:                </div>   
+18:             
+19:          <div>   
+20:            <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+21:          </div>   
+22:    </div>  
+23:    <%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();} %>
+  
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:12:21 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1078)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 2130)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">        
+        <h1>CONTACTO</h1>   
+       
+            <div>   
+              <label><h2>Nombre</h2></label>   
+              <h3> <%= @contact.nombre %> </h3>  
+            </div>   
+  
+            <div>   
+              <label><h2>Apellido</h2></label>   
+             <h3> <%= @contact.apellidos %>  </h3> 
+            </div>   
+            
+            <div>   
+              <label><h2>Calle</h2></label>   
+            <h3>  <%= @contact.calle %></h3>   
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+      </div>   
+</div>  
+<%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();} %>
+
+):
+1:    <div class="container">        
+2:            <h1>CONTACTO</h1>   
+3:           
+4:                <div>   
+5:                  <label><h2>Nombre</h2></label>   
+6:                  <h3> <%= @contact.nombre %> </h3>  
+7:                </div>   
+8:      
+9:                <div>   
+10:                  <label><h2>Apellido</h2></label>   
+11:                 <h3> <%= @contact.apellidos %>  </h3> 
+12:                </div>   
+13:                
+14:                <div>   
+15:                  <label><h2>Calle</h2></label>   
+16:                <h3>  <%= @contact.calle %></h3>   
+17:                </div>   
+18:             
+19:          <div>   
+20:            <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+21:          </div>   
+22:    </div>  
+23:    <%= window.onload = function() {if (window.jQuery) {alert("Yeah!");} else { location.reload();} %>
+  
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/contact/show.html.erb:23: syntax error, unexpected ';', expecting =>
+app/views/contact/show.html.erb:26: syntax error, unexpected end, expecting ')'
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:12:59 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1095)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 2892)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">        
+        <h1>CONTACTO</h1>   
+       
+            <div>   
+              <label><h2>Nombre</h2></label>   
+              <h3> <%= @contact.nombre %> </h3>  
+            </div>   
+  
+            <div>   
+              <label><h2>Apellido</h2></label>   
+             <h3> <%= @contact.apellidos %>  </h3> 
+            </div>   
+            
+            <div>   
+              <label><h2>Calle</h2></label>   
+            <h3>  <%= @contact.calle %></h3>   
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+      </div>   
+</div>  
+<%= Uncaught ReferenceError: jQuery is not defined  %>
+
+):
+1:    <div class="container">        
+2:            <h1>CONTACTO</h1>   
+3:           
+4:                <div>   
+5:                  <label><h2>Nombre</h2></label>   
+6:                  <h3> <%= @contact.nombre %> </h3>  
+7:                </div>   
+8:      
+9:                <div>   
+10:                  <label><h2>Apellido</h2></label>   
+11:                 <h3> <%= @contact.apellidos %>  </h3> 
+12:                </div>   
+13:                
+14:                <div>   
+15:                  <label><h2>Calle</h2></label>   
+16:                <h3>  <%= @contact.calle %></h3>   
+17:                </div>   
+18:             
+19:          <div>   
+20:            <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+21:          </div>   
+22:    </div>  
+23:    <%= Uncaught ReferenceError: jQuery is not defined  %>
+  
+app/views/contact/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:13:51 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1100)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 2897)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">        
+        <h1>CONTACTO</h1>   
+       
+            <div>   
+              <label><h2>Nombre</h2></label>   
+              <h3> <%= @contact.nombre %> </h3>  
+            </div>   
+  
+            <div>   
+              <label><h2>Apellido</h2></label>   
+             <h3> <%= @contact.apellidos %>  </h3> 
+            </div>   
+            
+            <div>   
+              <label><h2>Calle</h2></label>   
+            <h3>  <%= @contact.calle %></h3>   
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+      </div>   
+</div>  
+<%= 
+if ('undefined' == typeof window.jQuery) {
+    "// jQuery not present"
+} else {
+    "// jQuery present"
+} %>
+
+):
+1:    <div class="container">        
+2:            <h1>CONTACTO</h1>   
+3:           
+4:                <div>   
+5:                  <label><h2>Nombre</h2></label>   
+6:                  <h3> <%= @contact.nombre %> </h3>  
+7:                </div>   
+8:      
+9:                <div>   
+10:                  <label><h2>Apellido</h2></label>   
+11:                 <h3> <%= @contact.apellidos %>  </h3> 
+12:                </div>   
+13:                
+14:                <div>   
+15:                  <label><h2>Calle</h2></label>   
+16:                <h3>  <%= @contact.calle %></h3>   
+17:                </div>   
+18:             
+19:          <div>   
+20:            <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+21:          </div>   
+22:    </div>  
+23:    <%= 
+24:    if ('undefined' == typeof window.jQuery) {
+25:        "// jQuery not present"
+26:    } else {
+27:        "// jQuery present"
+28:    } %>
+  
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:26: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:27: syntax error, unexpected '\n', expecting =>
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:26: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:27: syntax error, unexpected '\n', expecting =>
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:26: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:27: syntax error, unexpected '\n', expecting =>
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:26: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:27: syntax error, unexpected '\n', expecting =>
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:26: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:27: syntax error, unexpected '\n', expecting =>
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:26: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:27: syntax error, unexpected '\n', expecting =>
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:14:21 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1106)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms | Allocations: 2903)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">        
+        <h1>CONTACTO</h1>   
+       
+            <div>   
+              <label><h2>Nombre</h2></label>   
+              <h3> <%= @contact.nombre %> </h3>  
+            </div>   
+  
+            <div>   
+              <label><h2>Apellido</h2></label>   
+             <h3> <%= @contact.apellidos %>  </h3> 
+            </div>   
+            
+            <div>   
+              <label><h2>Calle</h2></label>   
+            <h3>  <%= @contact.calle %></h3>   
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+      </div>   
+</div>  
+<%= 
+if ('undefined' == typeof window.jQuery) {
+    // jQuery not present
+} else {
+    // jQuery present
+} %>
+
+):
+1:    <div class="container">        
+2:            <h1>CONTACTO</h1>   
+3:           
+4:                <div>   
+5:                  <label><h2>Nombre</h2></label>   
+6:                  <h3> <%= @contact.nombre %> </h3>  
+7:                </div>   
+8:      
+9:                <div>   
+10:                  <label><h2>Apellido</h2></label>   
+11:                 <h3> <%= @contact.apellidos %>  </h3> 
+12:                </div>   
+13:                
+14:                <div>   
+15:                  <label><h2>Calle</h2></label>   
+16:                <h3>  <%= @contact.calle %></h3>   
+17:                </div>   
+18:             
+19:          <div>   
+20:            <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+21:          </div>   
+22:    </div>  
+23:    <%= 
+24:    if ('undefined' == typeof window.jQuery) {
+25:        // jQuery not present
+26:    } else {
+27:        // jQuery present
+28:    } %>
+  
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting =>
+app/views/contact/show.html.erb:28: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting =>
+app/views/contact/show.html.erb:28: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting =>
+app/views/contact/show.html.erb:28: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting =>
+app/views/contact/show.html.erb:28: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting =>
+app/views/contact/show.html.erb:28: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/contact/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/contact/show.html.erb:24: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/contact/show.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting =>
+app/views/contact/show.html.erb:28: syntax error, unexpected '}', expecting ')'
+app/views/contact/show.html.erb:31: syntax error, unexpected end, expecting ')'
+Started GET "/contact/show/53" for 127.0.0.1 at 2019-11-24 22:18:23 +0100
+Processing by ContactController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:17:in `show'
+  Rendering contact/show.html.erb within layouts/application
+  Rendered contact/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.7ms | Allocations: 9396)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:19:22 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2772)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 11275)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:25:40 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2350)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/deploy/crud-rails/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/deploy/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1001".
+
+[Webpacker] Hash: 3a909dc515e269c78bb4
+Version: webpack 4.41.2
+Time: 711ms
+Built at: 11/24/2019 10:25:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-055a3560e0e7df8de5c7.js   1.02 MiB  application  [emitted] [immutable]  application
+js/application-055a3560e0e7df8de5c7.js.map   1.11 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-055a3560e0e7df8de5c7.js js/application-055a3560e0e7df8de5c7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 834 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 113 hidden modules
+
+Completed 200 OK in 1366ms (Views: 1365.0ms | ActiveRecord: 0.2ms | Allocations: 11000)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:25:47 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2347)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 9855)
+
+
+Started GET "/contact/delete/53" for 127.0.0.1 at 2019-11-24 22:25:58 +0100
+Processing by ContactController#delete as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+  ↳ app/controllers/contact_controller.rb:33:in `delete'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_controller.rb:35:in `delete'
+  [1m[36mContact Destroy (0.2ms)[0m  [1m[31mDELETE FROM `contacts` WHERE `contacts`.`id` = 53[0m
+  ↳ app/controllers/contact_controller.rb:35:in `delete'
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contact_controller.rb:35:in `delete'
+Redirected to http://192.168.1.18/contact
+Completed 302 Found in 15ms (ActiveRecord: 11.9ms | Allocations: 2773)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:25:58 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 9441)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:27:37 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 10863)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-11-24 22:28:08 +0100
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts`[0m
+  ↳ app/views/contact/index.html.erb:31
+  Rendered contact/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1954)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 9422)
+
+
