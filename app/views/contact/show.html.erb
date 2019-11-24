@@ -1,2 +1,22 @@
-<h1>Contact#show</h1>
-<p>Find me in app/views/contact/show.html.erb</p>
+<div class="container">        
+        <h1>CONTACTO</h1>   
+       
+            <div>   
+              <label><h2>Nombre</h2></label>   
+              <h3> <%= @contact.nombre %> </h3>  
+            </div>   
+  
+            <div>   
+              <label><h2>Apellido</h2></label>   
+             <h3> <%= @contact.apellidos %>  </h3> 
+            </div>   
+            
+            <div>   
+              <label><h2>Calle</h2></label>   
+            <h3>  <%= @contact.calle %></h3>   
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'contact', action: 'index'} %>   
+      </div>   
+</div>  

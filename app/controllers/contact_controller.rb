@@ -14,6 +14,7 @@ class ContactController < ApplicationController
   end
 
   def show
+    @contact = Contact.find(params[:id])
   end
 
   def edit
@@ -29,6 +30,9 @@ class ContactController < ApplicationController
 
   def delete
     @contact = Contact.find(params[:id])
+    #si comentamos lineas de abajo salta delete.html.erb
+    @contact.destroy
+    redirect_to(:action => 'index')
   end
 
 
