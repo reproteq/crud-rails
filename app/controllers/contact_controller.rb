@@ -27,7 +27,8 @@ class ContactController < ApplicationController
     redirect_to(:action =>'index')
   end
 
-
+   
+    
   def delete
     @contact = Contact.find(params[:id])
     #si comentamos lineas de abajo salta delete.html.erb

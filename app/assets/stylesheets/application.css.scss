@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-//@import "~bootstrap/scss/bootstrap";
 
-//@import "bootstrap/scss/bootstrap";
-//*= require bootstrap/scss/bootstrap
 
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";
